@@ -1,5 +1,3 @@
-<h1>Aqui será o corpo do site</h1>
-
 <section class="busca">
     <h2>Buscar Startup</h2>
 
@@ -9,7 +7,7 @@
     </form>
 </section>
 
-<section class="menuStart">
+<section class="menu-start">
     <h2>Repositórios</h2>
     <nav>
         <ul>

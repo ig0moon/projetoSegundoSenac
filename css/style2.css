@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
     margin: 0 auto;
@@ -7,10 +7,13 @@ body {
     background-color: rgb(0, 0, 22);
 }
 
+
+/*  ----- CABEÇALHO -----   */
+
 header {
     width: 100%;
     display: flex;
-    height: 8vh;
+    height: 70px;
     background: rgb(0, 0, 0);
     border-bottom: solid rgb(39, 39, 39) 2px;
     position: relative;
@@ -27,14 +30,6 @@ header {
     height: 100%;
 }
 
-.container {
-    width: 70%;
-    border: solid white;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .menu-opcoes {
     position: absolute;
     bottom: 0;
@@ -42,7 +37,7 @@ header {
 }
 
 .menu-opcoes ul {
-    font-family: poppins;
+    font-family: poppins, arial, sans-serif;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -73,20 +68,63 @@ header {
     text-shadow: 2px 2px 2px red;
 }
 
+
+/*  ----- CORPO -----   */
+.container {
+    width: 70%;
+    height: auto;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    background-color: burlywood;
+    height: 100%;
+}
+
+.busca, .menu-start {
+    background-color: grey;
+    font-family: poppins, arial, sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 5px;
+}
+
+.menu-start ul {
+    font-family: poppins, arial, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    overflow: hidden;
+    font-weight: 50;
+}
+
+.menu-start ul li a {
+    color: white;
+}
+
+.menu-start ul li a:hover {
+    color: red;
+    text-shadow: 2px 2px 2px white;
+}
+
+.menu-start a {
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+}
+
+/*  ----- RODAPÉ -----  */
 footer {
     width: 100%;
     text-align: center;
-    display: block;
     position: bottom;
+    background-color:chocolate;
 }
 
 footer h1 {
     color: white;
-}
-
-@media only screen and (max-width: 700px) {
-    .container, .navbar {   
-        flex-direction: column;
-        position: unset;
-    }
 }
