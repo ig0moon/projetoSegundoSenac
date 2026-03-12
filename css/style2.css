@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    background-color: rgb(0, 0, 22);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    height: 8vh;
+    background: rgb(0, 0, 0);
+    border-bottom: solid rgb(39, 39, 39) 2px;
+    position: relative;
+}
+
+.logocabec {
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.logocabec img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 70%;
+    border: solid white;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul {
+    font-family: poppins;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.menu-opcoes ul li {
+    display: inline;
+}
+
+.menu-opcoes ul li a {
+    color: white;
+    background-color: rgb(17, 17, 17);
+}
+
+.menu-opcoes ul li a:hover {
+    color: red;
+    text-shadow: 2px 2px 2px white;
+}
+
+.menu-opcoes a {
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    display: block;
+    position: bottom;
+}
+
+footer h1 {
+    color: white;
+}
+
+@media only screen and (max-width: 700px) {
+    .container, .navbar {   
+        flex-direction: column;
+        position: unset;
+    }
+}
