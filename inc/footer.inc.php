@@ -1,9 +1,10 @@
 </div>
 
-</body>
-
     <footer>
-        <h1>Rodapé do Senac</h1>
+        <div class="rodape">
+            <h1>Rodapé do Senac</h1>
+        </div>
     </footer>
-    
+
+</body>    
 </html>
