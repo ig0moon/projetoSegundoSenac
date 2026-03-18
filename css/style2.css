@@ -74,8 +74,12 @@ header {
     color: white;
     margin: 0 auto;
     text-align: center;
-    background-color: burlywood;
-    height: 100%;
+    height: 1200px;
+}
+
+.container h2 {
+    margin: 5px;
+    padding: 5px;
 }
 
 .busca, .menu-start {
@@ -86,20 +90,29 @@ header {
     padding: 10px;
     width: 30%;
     margin-bottom: 5px;
+    clear: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .menu-start ul {
     font-family: poppins, arial, sans-serif;
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-size: 20px;
     overflow: hidden;
     font-weight: 50;
+    width: 90%;
 }
 
-.menu-start ul li a {
-    color: white;
+.menu-start ul li {
+    margin: 1px;
+}
+
+.menu-start ul li:hover {
+    font-size: 22px;
+    background-color: #636363;
 }
 
 .menu-start ul li a:hover {
@@ -108,6 +121,7 @@ header {
 }
 
 .menu-start a {
+    color: white;
     font-weight: 600;
     text-decoration: none;
     border-radius: 5px;
@@ -115,6 +129,38 @@ header {
     text-shadow: 2px 2px 2px red;
 }
 
+.busca {
+    margin: 0;
+    font-family: poppins, arial, sans-serif;
+}
+
+.busca input {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.busca button {
+    border: 1px solid black;
+    width: 200px;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.busca button:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.conteudo {
+    width: 30%;
+    float: left;
+    border: 1px solid white;
+    margin: 0;
+    color: white;
+}
 
 /*  ----- RODAPÉ -----  */
 footer {
@@ -123,11 +169,10 @@ footer {
 }
 
 .rodape {
-    border: solid white 1px;
     font-family: poppins, arial, sans-serif;
     text-align: center;
     position: bottom;
-    background-color:chocolate;
+    background-color:rgb(0, 0, 0);
     padding: 5px;
     margin: 0;
 }
@@ -140,13 +185,14 @@ footer h1 {
 
 /*  ----- RESPONSIVO -----  */
 @media only screen and (max-width: 800px) {
+
+    /* ----- CABEÇALHO ----- */
     header {
         display: flex;
         width: 100%;
-        height: 500px;
+        height: 400px;
         background: rgb(0, 0, 0);
-        border-bottom: solid rgb(39, 39, 39) 2px;
-        border: 1px solid green;
+        border-bottom: solid rgb(141, 141, 141) 2px;
     }
 
     .cabec {
@@ -156,20 +202,21 @@ footer h1 {
     }
 
     .logocabec {
-        border: 1px solid white;
-        width: 50%;
-        height: 25%;
+        width: 250px;
+        height: 95px;
         margin: auto;
     }
 
     .logocabec img {
         width: 100%;
         height: 100%;
-        border: 1px solid red;
+        padding: 0;
     }
 
     .menu-opcoes {
-        border: 1px solid blue;
+        border-top: solid rgb(141, 141, 141) 2px;
+        margin: 0;
+        width: 100%;
     }
     
     .menu-opcoes ul {
@@ -193,11 +240,6 @@ footer h1 {
         border-radius: 0;
     }
 
-    .menu-opcoes ul li a:hover {
-        color: red;
-        text-shadow: 2px 2px 2px white;
-    }
-
     .menu-opcoes a {
         width: 100%;
         font-weight: 600;
@@ -205,4 +247,11 @@ footer h1 {
         text-align: center;
         text-shadow: 2px 2px 2px red;
     }
+
+    .menu-opcoes ul li a:hover {
+        color: red;
+        text-shadow: 2px 2px 2px white;
+    }
+
+    /* ----- CORPO ----- */
 }
