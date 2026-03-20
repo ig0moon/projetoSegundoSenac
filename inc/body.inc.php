@@ -2,8 +2,8 @@
     <h2>Buscar Startup</h2>
 
     <form>
-        <input type="search" name="Busca">
-        <button>Buscar</button>
+        <input type="search" name="Busca" placeholder="Busque sua startup">
+        <button><img src="./img/lupa.png" alt="Buscar"></button>
     </form>
 </section>
 
@@ -20,6 +20,8 @@
     </nav>
 </section>
 
-<section class="conteudo">
-    <h2>um texto</h2>
+<section class="destaque">
+    <figure>
+        <img src="./img/startup.png" alt="Startup">
+    </figure>
 </section>

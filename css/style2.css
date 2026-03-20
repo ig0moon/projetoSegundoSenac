@@ -75,6 +75,7 @@ header {
     margin: 0 auto;
     text-align: center;
     height: 1200px;
+    background-color: chocolate;
 }
 
 .container h2 {
@@ -89,8 +90,6 @@ header {
     text-transform: uppercase;
     padding: 10px;
     width: 30%;
-    margin-bottom: 5px;
-    clear: left;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -134,33 +133,51 @@ header {
     font-family: poppins, arial, sans-serif;
 }
 
+.busca form {
+    display: flex;
+    justify-content: center;
+}
+
 .busca input {
-    padding: 5px;
-    border: 1px solid black;
+    width: 80%;
+    height: 35px;
 }
 
 .busca button {
-    border: 1px solid black;
-    width: 200px;
-    padding: 6px;
-    background-color: black;
-    color: white;
     border: none;
-    text-transform: uppercase;
-    border-radius: 3px;
+    width: 45px;
+    height: 35px;
+    margin: 0;
+    background-color: transparent;
 }
 
 .busca button:hover {
-    background-color: rgb(44, 44, 44);
+    cursor: pointer;
 }
 
-.conteudo {
-    width: 30%;
-    float: left;
-    border: 1px solid white;
-    margin: 0;
-    color: white;
+.busca button img {
+    width: 100%;
+    height: 100%;
 }
+
+.destaque {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+    float: left;
+}
+
+.destaque figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.destaque figure img {
+    width: 100%;
+    height: 100%;
+}
+
 
 /*  ----- RODAPÉ -----  */
 footer {
@@ -254,4 +271,12 @@ footer h1 {
     }
 
     /* ----- CORPO ----- */
+    .container {
+        width: 100%;
+        height: auto;
+        color: white;
+        margin: 0 auto;
+        text-align: center;
+        background-color: chocolate;
+    }
 }
